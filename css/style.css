@@ -262,7 +262,6 @@ body {
   left: 50%;
 
   min-width: 528px;
-  min-height: 581px;
   padding: 40px;
 
   background-color: var(--primary-white-color);
@@ -276,6 +275,9 @@ body {
 }
 
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,24 +293,46 @@ body {
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
+}
 
+.modal-form-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
 }
 
 .modal-form-list {
+  position: relative;
   display: flex;
   flex-direction: column;
-  
+  margin-top: 12px;
+
   gap: 10px;
 }
 
 .modal-form-item {
-  
 }
 
 .modal-form-label {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
 
+.modal-label-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
 }
 
 .modal-form-input {
@@ -317,10 +341,50 @@ body {
   padding-left: 42px;
 }
 
-.modal-form-item::after {
-  background-image: url(../images/icons.svg#person-black);
-  background-size: 18px;
+.modal-form-checkbox {
+  margin-top: 20px;
 }
+
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.send-button {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: var(--accent-color);
+
+  border: 0px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.icon-person-black {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+
+  fill: var(--title-text-color);
+}
+
+.modal-form-input:focus-within + .icon-person-black {
+  fill: var(--accent-color);
+}
+
 /* --------------------common-section-styles------------------- */
 
 .section-title {
@@ -778,7 +842,6 @@ body {
 }
 
 .mailing-label {
-
 }
 
 .mailing-input {
@@ -790,7 +853,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-
   background-color: var(--accent-background-color);
 
   font-family: 'Roboto';
@@ -799,9 +861,8 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  
-  color: rgba(255, 255, 255, 0.6);
 
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-sumbit {
@@ -828,5 +889,5 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
