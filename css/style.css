@@ -359,8 +359,22 @@ body {
   border-radius: 4px;
 }
 
-.checkbox-input::after {
-  content: ;
+.checkbox-text::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  background-origin: border-box;
+}
+
+.checkbox-input:checked ~ .checkbox-text::before {
+  background-image: url(../images/icons.svg#icon-check);
+  border-color: transparent;
 }
 
 .checkbox-text {
