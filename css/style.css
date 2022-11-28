@@ -339,10 +339,21 @@ body {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .modal-form-checkbox {
   margin-top: 20px;
+}
+
+.modal-form-textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .checkbox-text {
@@ -371,7 +382,7 @@ body {
   border-radius: 4px;
 }
 
-.icon-person-black {
+.icon-black {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -381,8 +392,14 @@ body {
   fill: var(--title-text-color);
 }
 
-.modal-form-input:focus-within + .icon-person-black {
+.modal-form-input:focus-within + .icon-black {
   fill: var(--accent-color);
+}
+
+.modal-form-input:focus-within,
+.modal-form-textarea:focus-within {
+  outline: 1px solid transparent;
+  border-color: var(--accent-color);
 }
 
 /* --------------------common-section-styles------------------- */
