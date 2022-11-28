@@ -344,42 +344,17 @@ body {
   border-radius: 4px;
 }
 
-.modal-form-checkbox {
-  margin-top: 20px;
-}
-
 .modal-form-textarea {
   resize: none;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.checkbox-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-}
-
-.send-button {
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 40px;
-  width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  background-color: var(--accent-color);
-
-  border: 0px solid;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.166px;
+  letter-spacing: 0.01em;
 }
 
 .icon-black {
@@ -401,6 +376,62 @@ body {
   outline: 1px solid transparent;
   border-color: var(--accent-color);
 }
+
+.modal-form-checkbox {
+  margin-top: 20px;
+}
+
+
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.checkbox-text::before { 
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  transform: translateY(17%);
+
+  background-image: url(../images/icons.svg#icon-checkbox);
+  background-size: auto;
+  
+}
+
+.checkbox-input:checked ~ .checkbox-text::before {
+  background-image: url(../images/icons.svg#icon-check);
+  background-origin: border-box;
+  border-color: transparent;
+}
+.send-button {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: var(--accent-color);
+
+  border: 0px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 
 /* --------------------common-section-styles------------------- */
 
