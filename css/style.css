@@ -307,8 +307,6 @@ body {
 }
 
 .modal-form-text {
-
-
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -940,4 +938,12 @@ body {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+
+.button-text::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icons.svg#icon-send);
 }
