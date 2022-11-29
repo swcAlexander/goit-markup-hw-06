@@ -38,8 +38,8 @@
               </svg>
               <span>info@devstudio.com</span>
             </a>
-          </li class="contact-item">
-          <li>
+          </li>
+          <li class="contact-item">
             <a href="tel:+380961111111" class="contact-link list">
               <svg class="icon-smartphone">
                 <use
@@ -72,16 +72,16 @@
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
             </button>
-            <form class="modal-form">
-              <span class="modal-form-text">Залиште свої дані, ми вам передзвонимо</span>
+            <p class="modal-form-text">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form"> 
               <ul class="modal-form-list">
                 <li class="modal-form-item">
                   <label class="modal-form-label">
                     
                     <span class="modal-label-text">Ім'я</span>
-                    <input type="name" name="imput-name" class="modal-form-input">
+                    <input type="text" name="imput-name" class="modal-form-input">
                     <svg class="icon-black">
-                      <use href="/images/icons.svg#icon-person-black" width="18" height="18" ></use>
+                      <use href="./images/icons.svg#icon-person-black" width="18" height="18" ></use>
                     </svg>
                   </label>
                 </li>
@@ -89,9 +89,9 @@
                   <label class="modal-form-label">
                     
                     <span class="modal-label-text">Телефон</span>
-                    <input type="phone" name="imput-phone" class="modal-form-input">
+                    <input type="tel" name="imput-phone" class="modal-form-input">
                     <svg class="icon-black">
-                      <use href="/images/icons.svg#icon-phone-black" width="18" height="18" ></use>
+                      <use href="./images/icons.svg#icon-phone-black" width="18" height="18" ></use>
                     </svg>
                   </label>
                 </li>
@@ -100,7 +100,7 @@
                     <span class="modal-label-text">Пошта</span>
                     <input type="email" name="imput-email" class="modal-form-input">
                     <svg class="icon-black">
-                      <use href="/images/icons.svg#icon-email-black" width="18" height="18" ></use>
+                      <use href="./images/icons.svg#icon-email-black" width="18" height="18" ></use>
                     </svg>
                   </label>
                 </li>
@@ -121,9 +121,7 @@
                 <span class="button-text">Відправити</span>
               </button>
             </form>
-
           </div>
-
         </div>
       </section>
       <section class="skills-section">
@@ -477,6 +475,7 @@
               </a>
             </li>
           </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -543,8 +542,8 @@
         </div>
         <div class="mailing-container">
           <span class="mailing-text">Підпишіться на розсилку</span>
-          <form action="" class="mailing-form">
-            <label for="" class="mailing-label">
+          <form class="mailing-form">
+            <label class="mailing-label">
               <input type="email" class="mailing-input" placeholder="E-mail" />
             </label>
             <button type="submit" class="button-sumbit"><span class="button-text">Підписатися</span></button>
